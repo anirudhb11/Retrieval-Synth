@@ -1,0 +1,25 @@
+num_topics: 50000
+# same as number of topics in Prior LDA
+num_labels: 50000 
+num_trn_data_pts: 200000
+num_tst_data_pts: 200000
+# Number of tokens in the vocabulary
+word_pool_size: 60000
+# Bernoulli distribution parameter that controls the homogeneity of the distribution
+homogenity_factor: 1.0
+# Dirichlet distribution parameter that controls how label token distribution, a dirichlet dist. is sampled then a multinomial distribution is sampled from the dirichlet distribution.
+label_token_alpha_dirichlet: 10000
+# Used to control label skew
+lbl_prior_k: 0.25
+# To generate a data point we first pick a topic from a dirichlet distribution with this parameter
+topic_sampling_alpha_dirichlet: 1e-6
+# Number of tokens in the label txt
+label_text_seq_len: 20
+# Number of tokens in document text
+doc_text_seq_len: 25
+# Number of labels per data point
+labels_sampled_per_data_pt: 4
+num_tokens_per_label: 25
+# Default A, B from which propensity scores of different labels are derived (Jain et. al 2016), this is used to drop lables.
+A: 0.55
+B: 1.5

@@ -23,3 +23,5 @@ num_tokens_per_label: 25
 # Default A, B from which propensity scores of different labels are derived (Jain et. al 2016), this is used to drop lables.
 A: 0.55
 B: 1.5
+
+datasets_dir: '/data/Datasets'
